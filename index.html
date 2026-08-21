@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        
+        :root {
+            --accent-color: #00ff00; 
+            --left-bg: #151515;
+            --right-bg: #1e1e1e;
+            --text-main: #e0e0e0;
+            --border-color: #333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--right-bg);
+        }
+
+        
+        .book {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        
+        .left-page {
+            width: 35%;
+            background-color: var(--left-bg);
+            border-right: 2px solid var(--border-color);
+            padding: 50px;
+            box-sizing: border-box;
+
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        
+        .right-page {
+            width: 65%;
+            background-color: var(--right-bg);
+            padding: 50px 80px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+       
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 1.2em;
+            margin-top: 0;
+            opacity: 0.8;
+        }
+
+        h3 {
+            color: var(--accent-color);
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+
+        ul.contacts {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.contacts li {
+            margin-bottom: 10px;
+        }
+
+        ul.contacts li span {
+            color: var(--accent-color);
+        }
+
+        .skill-tag {
+            display: inline-block;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 8px 15px;
+            margin: 5px 5px 5px 0;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            background-color: #1a1a1a;
+        }
+
+        .skill-tag:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            cursor: default;
+        }
+
+        
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background-color: #252525;
+            border-left: 3px solid var(--accent-color);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 1px solid var(--border-color);
+            background-color: #111;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-content strong {
+            color: #fff;
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--right-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: underline dashed var(--accent-color);
+        }
+
+        
+        @media (max-width: 850px) {
+            .book {
+                flex-direction: column; 
+            }
+            .left-page {
+                width: 100%; 
+                height: auto; 
+                position: relative; 
+                border-right: none; 
+                border-bottom: 2px solid var(--border-color); 
+                padding: 40px 30px;
+            }
+            .right-page {
+                width: 100%; 
+                padding: 30px 20px; 
+                overflow-y: visible; 
+            }
+            h1 {
+                font-size: 2em; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="book">
+
+        
+        <div class="left-page">
+            <h1>> Babacar_M_Diop</h1>
+            <h2>Babacar Moustapha Diop</h2>
+            <p>Étudiant en L3 Génie Logiciel.</p>
+            <p>Passionné par le développement d'applications performantes et la conception d'interfaces interactives.
+            </p>
+
+            <h3 style="margin-top: 30px;">[ Contacts ]</h3>
+            <ul class="contacts">
+                <li><span>Email:</span> babacardiop39178@gmail.com</li>
+                <li><span>GitHub:</span> <a href="https://github.com/BabacarMoustapha-Diop" target="_blank">BabacarMoustapha-Diop</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="right-page">
+
+            <h3>[ Stack Technique ]</h3>
+            <div>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Vue.js</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Php</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">WordPress (Elementor)</span>
+                <span class="skill-tag">Figma</span>
+            </div>
+
+            <h3>[ Projets Récents ]</h3>
+
+            
+            <div class="projects-container">
+
+                
+                <div class="project-card">
+                    <img src="images/Capture d'écran 2026-08-21 175345.png" alt="Mediclic-dakar" class="project-image">
+                    <div class="project-content">
+                        <strong>Mediclic-dakar</strong>
+                        <span>Développement d'un site web type e-commerce pharmaceutique fait avec du Laravel et Vue.js.</span>
+                    </div>
+                </div>
+
+                
+                <div class="project-card">
+                    <img src="images/Capture d'écran 2026-08-21 175923.png" alt="Association" class="project-image">
+                    <div class="project-content">
+                        <strong>Site Association Soninké</strong>
+                        <span>Conception et développement d'un site web pour une association fait avec du wordpress.</span>
+                        <br><br>
+                        <a href="https://jilso.org/" target="_blank">
+                            > Voir le site web
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
