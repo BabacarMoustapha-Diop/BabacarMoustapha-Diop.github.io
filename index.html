@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        
         :root {
-            --accent-color: #00ff00; 
+            --accent-color: #00ff00;
             --left-bg: #151515;
             --right-bg: #1e1e1e;
             --text-main: #e0e0e0;
@@ -23,14 +22,14 @@
             background-color: var(--right-bg);
         }
 
-        
+
         .book {
             display: flex;
             width: 100%;
             min-height: 100vh;
         }
 
-        
+
         .left-page {
             width: 35%;
             background-color: var(--left-bg);
@@ -46,7 +45,7 @@
             justify-content: center;
         }
 
-        
+
         .right-page {
             width: 65%;
             background-color: var(--right-bg);
@@ -55,7 +54,7 @@
             overflow-y: auto;
         }
 
-       
+
         h1 {
             color: var(--accent-color);
             font-size: 2.5em;
@@ -108,7 +107,7 @@
             cursor: default;
         }
 
-        
+
         .projects-container {
             display: flex;
             flex-direction: column;
@@ -145,7 +144,7 @@
             margin-bottom: 10px;
         }
 
-        
+
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -174,26 +173,29 @@
             text-decoration: underline dashed var(--accent-color);
         }
 
-        
+
         @media (max-width: 850px) {
             .book {
-                flex-direction: column; 
+                flex-direction: column;
             }
+
             .left-page {
-                width: 100%; 
-                height: auto; 
-                position: relative; 
-                border-right: none; 
-                border-bottom: 2px solid var(--border-color); 
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 2px solid var(--border-color);
                 padding: 40px 30px;
             }
+
             .right-page {
-                width: 100%; 
-                padding: 30px 20px; 
-                overflow-y: visible; 
+                width: 100%;
+                padding: 30px 20px;
+                overflow-y: visible;
             }
+
             h1 {
-                font-size: 2em; 
+                font-size: 2em;
             }
         }
     </style>
@@ -203,23 +205,24 @@
 
     <div class="book">
 
-        
+
         <div class="left-page">
             <h1>> Babacar_M_Diop</h1>
             <h2>Babacar Moustapha Diop</h2>
-            <p>Diplômé de Licence 3 en Génie Logiciel à Sup Déco et étudiant en Développement d’Applications Web à l’UN-CHK en L3.</p>
-            <p>Étudiant en L3 Génie Logiciel.</p>
+            <p>Diplômé d'une Licence 3 en Génie Logiciel à Sup Déco et étudiant en Développement d’Applications Web à
+                l’UN-CHK en L3.</p>
             <p>Passionné par le développement d'applications performantes et la conception d'interfaces interactives.
             </p>
 
             <h3 style="margin-top: 30px;">[ Contacts ]</h3>
             <ul class="contacts">
                 <li><span>Email:</span> babacardiop39178@gmail.com</li>
-                <li><span>GitHub:</span> <a href="https://github.com/BabacarMoustapha-Diop" target="_blank">BabacarMoustapha-Diop</a></li>
+                <li><span>GitHub:</span> <a href="https://github.com/BabacarMoustapha-Diop"
+                        target="_blank">BabacarMoustapha-Diop</a></li>
             </ul>
         </div>
 
-        
+
         <div class="right-page">
 
             <h3>[ Compétences techniques ]</h3>
@@ -245,24 +248,26 @@
 
             <h3>[ Projets Récents ]</h3>
 
-            
+
             <div class="projects-container">
 
-                
+
                 <div class="project-card">
                     <img src="images/Capture d'écran 2026-08-21 175345.png" alt="Mediclic-dakar" class="project-image">
                     <div class="project-content">
                         <strong>Mediclic-dakar</strong>
-                        <span>Développement d'un site web type e-commerce pharmaceutique fait avec du Laravel et Vue.js.</span>
+                        <span>Développement d'un site web type e-commerce pharmaceutique fait avec du Laravel et
+                            Vue.js.</span>
                     </div>
                 </div>
 
-                
+
                 <div class="project-card">
                     <img src="images/Capture d'écran 2026-08-21 175923.png" alt="Association" class="project-image">
                     <div class="project-content">
                         <strong>Site Association Soninké</strong>
-                        <span>Conception et développement d'un site web pour une association fait avec du wordpress.</span>
+                        <span>Conception et développement d'un site web pour une association fait avec du
+                            wordpress.</span>
                         <br><br>
                         <a href="https://jilso.org/" target="_blank">
                             > Voir le site web
